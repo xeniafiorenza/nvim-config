@@ -6,10 +6,29 @@
 let g:ale_disable_lsp = 1
 
 " load plugins
-runtime bundle/pathogen/autoload/pathogen.vim
-execute pathogen#infect()
-call pathogen#helptags() 
-
+call plug#begin('~/.config/nvim/plugged')
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
+  Plug 'preservim/nerdtree'
+  Plug 'dense-analysis/ale'
+  Plug 'qpkorr/vim-bufkill'
+  Plug 'terryma/vim-multiple-cursors'
+  Plug 'bkad/CamelCaseMotion'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'easymotion/vim-easymotion'
+  Plug 'tpope/vim-fugitive'
+  Plug 'airblade/vim-gitgutter'
+  Plug 'preservim/nerdcommenter'
+  Plug 'preservim/nerdtree'
+  Plug 'ryanoasis/vim-devicons'
+  Plug 'Xuyuanp/nerdtree-git-plugin'
+  Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+  Plug 'PhilRunninger/nerdtree-visual-selection'
+  Plug 'tpope/vim-surround'
+  Plug 'mbbill/undotree'
+  Plug 'wesQ3/vim-windowswap'
+call plug#end()
+" If installing for first time, do :PlugInstall
 
 " --------------
 "    NERDTree
