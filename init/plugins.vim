@@ -12,7 +12,6 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'preservim/nerdtree'
   Plug 'dense-analysis/ale'
   Plug 'qpkorr/vim-bufkill'
-  Plug 'terryma/vim-multiple-cursors'
   Plug 'bkad/CamelCaseMotion'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'easymotion/vim-easymotion'
@@ -27,6 +26,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'tpope/vim-surround'
   Plug 'mbbill/undotree'
   Plug 'wesQ3/vim-windowswap'
+  Plug 'terryma/vim-multiple-cursors'
 call plug#end()
 " If installing for first time, do :PlugInstall
 
@@ -93,3 +93,11 @@ let g:ale_sign_column_always = 1
 let g:ale_sign_error = '**'
 let g:ale_sign_warning = '!!'
 let g:ale_completion_autoimport = 1
+
+
+" --------------
+" vim-visual-multi
+" --------------
+let g:VM_maps = {}
+let g:VM_maps["Undo"] = 'u'
+let g:VM_maps["Redo"] = '<C-r>'
