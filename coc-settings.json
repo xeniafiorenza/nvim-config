@@ -1,0 +1,8 @@
+{
+  "diagnostic.displayByAle": true,
+  "python.pythonPath": "/opt/homebrew/bin/python3",
+  "rpc.ignoreWorkspaces": [
+    "xeniafiorenza",
+    "*xeniafiorenza*"
+  ]
+}
