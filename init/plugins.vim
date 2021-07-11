@@ -27,6 +27,8 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'mbbill/undotree'
   Plug 'wesQ3/vim-windowswap'
   Plug 'terryma/vim-multiple-cursors'
+  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+  Plug 'junegunn/fzf.vim'
 call plug#end()
 " If installing for first time, do :PlugInstall
 
@@ -101,3 +103,9 @@ let g:ale_completion_autoimport = 1
 let g:VM_maps = {}
 let g:VM_maps["Undo"] = 'u'
 let g:VM_maps["Redo"] = '<C-r>'
+
+
+" --------------
+"    fzf.vim
+" --------------
+let g:fzf_command_prefix = 'Fzf'
